@@ -1,0 +1,22 @@
+{
+	"background": { 
+		"scripts": [ "background.js", "jquery.js", "jquery-ui.min.js" ],
+		"persistent": false   
+	},
+	"content_scripts" : [ {
+		"matches": [ "\u003Call\u005Furls\u003E" ],
+		"css": [ "styles.css", "jquery-ui.min.css" ],
+		"js" : [ "content.js", "tools.js" ]
+	} ],
+	"description": "Saves selected text to storage",
+	"manifest_version": 2,
+	"minimum_chrome_version": "45",
+	"name": "NotesPoc",
+	"offline_enabled": true,
+	"permissions": [ "activeTab", "background", "contextMenus", "tabs", "storage" ],
+	"version": "1.0",
+	"browser_action": {
+          "default_title": "NotesPoc"
+	},
+	"web_accessible_resources": [ "*.css", "*.js", "*.html" ]
+}

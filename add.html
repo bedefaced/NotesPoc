@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
+<script type="text/javascript" src="tools.js"></script>
+<script type="text/javascript" src="add.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body class="dialog">
+<div>
+<ul id="savedLinks"></ul>
+<h1>NotesPoc</h1>
+<p align="center">
+	<h2>Save in existing collection</h2>
+	<select id="colList">
+	<option disabled selected value> -- select an option -- </option>
+	</select>
+	<br/><br/>
+	<input type="button" id="btnSave" value="Save" />
+</p>
+<p align="center">
+<h2>Save in new collection</h2>
+<input type="text" id="txtNewCollection" size="15"/>
+<br/><br/>
+<input type="button" id="btnCreate" value="Create" /><br/>
+</p>
+</div>
+<p id="dialog"></p>
+</body>
+</html>
